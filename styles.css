@@ -1,4 +1,4 @@
-/*  your css code here. If applicable */
+/* Modal hidden by default */
 .modal {
   display: none;
   position: fixed;
@@ -10,9 +10,13 @@
   overflow: auto;
   background-color: rgba(0,0,0,0.6);
 }
+
+/* Show modal when checkbox is checked */
 #modalToggle:checked ~ .modal {
   display: block;
 }
+
+/* Modal content box */
 .modal-content {
   background-color: white;
   margin: 10% auto;
@@ -20,6 +24,8 @@
   border: 1px solid #888;
   width: 50%;
 }
+
+/* Header */
 .modal-header {
   padding: 10px;
   background-color: green;
@@ -28,12 +34,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* Close button */
 .close {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   padding: 0 10px;
 }
+
+/* Body */
 .modal-body {
   padding: 20px;
 }
